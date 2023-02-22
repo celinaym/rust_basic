@@ -3,6 +3,7 @@ mod constant;
 mod function;
 mod scope;
 mod closure;
+mod condition;
 
 fn main() {
     variable::variable();
@@ -10,4 +11,6 @@ fn main() {
     function::function();
     scope::scope();
     closure::closure(3);
+    condition::condition_ifelse();
+    condition::condition_letif();
 }
