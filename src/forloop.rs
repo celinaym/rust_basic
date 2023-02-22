@@ -1,4 +1,4 @@
-pub fn iterator(){
+pub fn for_loop(){
     for i in 6..10 {    //work as range in python
         print!("{}", i);
     }

@@ -4,7 +4,8 @@ mod function;
 mod scope;
 mod closure;
 mod condition;
-mod iterator;
+mod forloop;
+mod whileloop;
 
 fn main() {
     variable::variable();
@@ -14,5 +15,7 @@ fn main() {
     closure::closure(3);
     condition::condition_ifelse();
     condition::condition_letif();
-    iterator::iterator()
+    forloop::for_loop();
+    whileloop::whileloop();
+
 }
