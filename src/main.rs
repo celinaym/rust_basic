@@ -1,3 +1,7 @@
+mod variable;
+mod constant;
+
 fn main() {
-    println!("Hello, world!");
+    variable::variable();
+    constant::constant();
 }
