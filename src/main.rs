@@ -7,6 +7,7 @@ mod condition;
 mod forloop;
 mod whileloop;
 mod infiniteloop;
+mod matching;
 
 fn main() {
     variable::variable();
@@ -19,5 +20,7 @@ fn main() {
     forloop::for_loop();
     whileloop::whileloop();
     infiniteloop::infinite_loop();
-    infiniteloop::infinite_loop2()
+    infiniteloop::infinite_loop2();
+    matching::matching();
+    matching::matching2();
 }
