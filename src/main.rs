@@ -6,6 +6,7 @@ mod closure;
 mod condition;
 mod forloop;
 mod whileloop;
+mod infiniteloop;
 
 fn main() {
     variable::variable();
@@ -17,5 +18,6 @@ fn main() {
     condition::condition_letif();
     forloop::for_loop();
     whileloop::whileloop();
-
+    infiniteloop::infinite_loop();
+    infiniteloop::infinite_loop2()
 }
