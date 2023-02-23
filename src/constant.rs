@@ -8,4 +8,3 @@ pub fn constant() {
     println!("{}", THRESHOLD);
     println!("{}", is_big(THRESHOLD));
 }
-

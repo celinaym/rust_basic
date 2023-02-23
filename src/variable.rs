@@ -1,4 +1,4 @@
-pub fn variable(){
+pub fn variable() {
     println!("import var");
 
     //TODO variable declaration
@@ -10,10 +10,10 @@ pub fn variable(){
     x = 3.0;
     println!("x={}, y={}", x, y);
 
-    let x = 6;  //x is redeclared as 6(immutable but permit shadowing)
+    let x = 6; //x is redeclared as 6(immutable but permit shadowing)
     println!("x={}, y={}", x, y);
 
     let m: f64 = 1.2;
-    let n = m as i32; 
+    let n = m as i32;
     println!("m={}, n={}", m, n);
 }
