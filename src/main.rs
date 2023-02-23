@@ -1,3 +1,5 @@
+use std::io;
+
 mod closure;
 mod condition;
 mod constant;
@@ -10,21 +12,35 @@ mod variable;
 mod while_loop;
 
 fn main() {
-    variable::variable();
-    constant::constant();
-    function::function();
-    scope::scope();
-    closure::closure(3);
-    condition::condition_ifelse();
-    condition::condition_letif();
-    for_loop::for_loop();
-    while_loop::whileloop();
-    infinite_loop::infinite_loop();
-    infinite_loop::infinite_loop2();
-    matching::matching();
-    matching::matching2();
+    let real_name = "yeongmin";
 
-    let x = "Hello";
-    let y = x;
-    println!("{} {}", x, y);
+    loop {
+        let mut name = String::new(); //new -> String type의 연관함수(String 인스턴스 아님)
+        println!("Please enter your name: ");
+        io::stdin()
+            .read_line(&mut name)
+            .expect("Failed to read line");
+        let name = name.trim();
+
+        if name == real_name {
+            println!("login success.");
+
+            variable::variable();
+            constant::constant();
+            function::function();
+            scope::scope();
+            closure::closure(3);
+            condition::condition_ifelse();
+            condition::condition_letif();
+            for_loop::for_loop();
+            while_loop::whileloop();
+            infinite_loop::infinite_loop();
+            infinite_loop::infinite_loop2();
+            matching::matching();
+            matching::matching2();
+            break;
+        } else {
+            println!("login failed. Please try again.");
+        }
+    }
 }
