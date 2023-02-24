@@ -10,6 +10,7 @@ mod matching;
 mod scope;
 mod variable;
 mod while_loop;
+mod matching_game;
 
 fn main() {
     let real_name = "yeongmin";
@@ -25,6 +26,7 @@ fn main() {
         if name == real_name {
             println!("login success.");
 
+            matching_game::matching_game();
             variable::variable();
             constant::constant();
             function::function();
